@@ -74,7 +74,6 @@ public class SimpleLinkedListImpl<E> implements LinkedList<E>, Iterable<E> {
     }
 
 
-
     @Override
     public int size() {
         return size;
@@ -140,7 +139,7 @@ public class SimpleLinkedListImpl<E> implements LinkedList<E>, Iterable<E> {
         public boolean hasNext() {
             if (current.next != null) {
                 return true;
-            }else {
+            } else {
                 return false;
             }
         }
@@ -159,8 +158,8 @@ public class SimpleLinkedListImpl<E> implements LinkedList<E>, Iterable<E> {
             return null;
         }
 
-        public void reset () {
-         current = (Node<E>) first;
+        public void reset() {
+            current = (Node<E>) first;
         }
     }
 }

@@ -3,18 +3,12 @@ package Lesson4;
 import Lesson4.Deque.Deque;
 import Lesson4.Deque.LinkedDeque;
 
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-
 public class TestMain4 {
 
     public static void main(String[] args) {
-     // testLinkedList();
-      //testLinkedDeque();
-       testHomeWork();
-     // testIterator();
+        testLinkedList();
+        testLinkedDeque();
+        testHomeWorkIterator();
     }
 
     private static void testLinkedList() {
@@ -50,7 +44,7 @@ public class TestMain4 {
 
     }
 
-    private static void testLinkedDeque () {
+    private static void testLinkedDeque() {
 
         Deque<Integer> linkedDeque = new LinkedDeque<>();
 
@@ -74,7 +68,7 @@ public class TestMain4 {
         linkedDeque.display();
     }
 
-    private static void testHomeWork() {
+    private static void testHomeWorkIterator() {
 
         SimpleLinkedListImpl simpleLinkedList = new SimpleLinkedListImpl();
         simpleLinkedList.insertFirst(1);

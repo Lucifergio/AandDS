@@ -18,7 +18,7 @@ public class TwoSideLinkedListImpl<E> extends SimpleLinkedListImpl<E> implements
             insertFirst(value);
             return;
         }
-        last.next = last  = new Node<>(value, null);
+        last.next = last = new Node<>(value, null);
         size++;
     }
 
@@ -62,7 +62,7 @@ public class TwoSideLinkedListImpl<E> extends SimpleLinkedListImpl<E> implements
     /**
      * Задание №3
      */
-    public boolean insert (E value, int position) {
+    public boolean insert(E value, int position) {
 
         Node<E> current = first;
         Node<E> prev = null;
@@ -75,12 +75,11 @@ public class TwoSideLinkedListImpl<E> extends SimpleLinkedListImpl<E> implements
                 prev = current;
             } else if (current == null) {
                 return false;
-            }else if (current.next == last) {
+            } else if (current.next == last) {
                 size++;
                 insertLast(value);
                 return true;
-            }
-            else if (i == position) {
+            } else if (i == position) {
                 E newValue = value;
                 Node<E> newNode = new Node<>(newValue, current);
                 prev.next = newNode;

@@ -4,7 +4,7 @@ import Lesson3.queue.Queue;
 import Lesson4.TwoSideLinkedList;
 import Lesson4.TwoSideLinkedListImpl;
 
-public class LinkedDeque <E> implements Queue<E>, Deque<E>{
+public class LinkedDeque<E> implements Queue<E>, Deque<E> {
 
     private final TwoSideLinkedList<E> data;
 
@@ -66,7 +66,7 @@ public class LinkedDeque <E> implements Queue<E>, Deque<E>{
 
     @Override
     public E removeLeft() {
-       return data.removeFirst();
+        return data.removeFirst();
     }
 
     @Override
