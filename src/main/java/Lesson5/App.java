@@ -1,6 +1,5 @@
 package Lesson5;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +29,7 @@ public class App {
         items.add(i3);
         items.add(i4);
         items.add(i5);
-        //knapsackProblem(items, 5);
+        knapsackProblem(items, 5);
     }
 
     private static void exponentiation(int num, int expo) {
@@ -49,15 +48,14 @@ public class App {
             expo--;
             num = num * newExpo;
             exponentiation(num, expo);
-        }else if (expo < 0) {
+        } else if (expo < 0) {
             expo++;
             num = num * newExpo;
             exponentiation(num, expo);
-        }else if (expo == 0) {
-           System.out.println("Result: " + (float) 1 / num);
-           return;
-        }
-        else {
+        } else if (expo == 0) {
+            System.out.println("Result: " + (float) 1 / num);
+            return;
+        } else {
             System.out.println("Result: " + num);
             return;
         }
@@ -107,4 +105,3 @@ public class App {
         knapsackProblem(newItem, 5);
     }
 }
-
