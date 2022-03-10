@@ -33,8 +33,6 @@ public class App {
                 level = 0;
             }
         }
-
         System.out.println("The percentage of unbalanced trees is = " + ((notBalancedTree * 100) / TOTAL_TREE) + "%");
-
     }
 }
